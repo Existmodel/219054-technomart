@@ -5,24 +5,24 @@
     <title>HTML Academy: Техномарт Каталог</title>
   </head>
   <body>
-    <header class="main-header"> 
+    <header class="main-header">
       <div class="main-header-top">
         <div class="container">
           <a class="logo" href="index.html">Техномарт</a>
 		      <form class="header-form-search" action="https://echo.htmlacademy.ru" method="post">
 		        <input id="form-search" type="search" name="search" placeholder="Поиск:">
-		        <label for="form-search"></label>		      
+		        <label for="form-search"></label>
           </form>
           <a class="header-bookmarks" href="#">Закладки: 0</a>
           <a class="header-cart" href="#">Корзина: 10</a>
           <a class="header-order-btn" href="#">Оформить заказ</a>
 		    </div>
-	    </div>    
+	    </div>
 	    <div class="container">
         <div class="main-header-middle">
 	        <div class="header-info">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          </div> 
+          </div>
 	        <div class="header-contacts">
 	  	      <p>+7 (812) 555-05-55</p>
 	  	      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -73,7 +73,7 @@
             <li>
               <a href="#">Инструмент</a>
             </li>
-            <li> 
+            <li>
               <a>Перфораторы</a>
             </li>
 		      </ul>
@@ -85,13 +85,11 @@
           </div>
           <form action="https://echo.htmlacademy.ru" method="post">
 	          <fieldset>
-	              <div class="">
-	              <p>Цена</p>
+	              <legend>Цена</legend>
 	              <!--БЛОК ЦЕНА-ПОЛЗУНОК-->
-	              </div>
 	          </fieldset>
 	          <fieldset>
-	            <p>Производители</p>
+	            <legend>Производители</legend>
               <input id="brand-1" type="checkbox" name="brand-1" checked>
               <label for="brand-1">Bosch</label>
               <input id="brand-2" type="checkbox" name="brand-2">
@@ -104,24 +102,24 @@
               <label for="brand-5">Hitachi</label>
             </fieldset>
 		        <fieldset>
-		          <p>Питание</p>
-              <input type="radio" name="energy" value="accumulator">
-              <label id="">Аккумуляторные</label>
+		          <legend>Питание</legend>
+              <input id="battery-power" type="radio" name="energy" value="accumulator">
+              <label for="battery-power">Аккумуляторные</label>
               <input type="radio" name="energy" value="electronetwork" checked>
-              <label id="">Сетевые</label>
-              <input type="submit" value="Показать">
+              <label for="network-power">Сетевые</label>
+              <input id="network-power" type="submit" value="Показать">
             </fieldset>
           </form>
         </aside>
         <section>
           <div class="sorting">
+            <p>Сортировка:</p>
             <ul>
-              <li>Сортировка:</li>
               <li>
                 <a href="#">По цене</a>
               </li>
               <li>
-                <a href="#">По типу</a>
+                 <a href="#">По типу</a>
               </li>
               <li>
                 <a href="#">По функционалу</a>
@@ -129,7 +127,7 @@
               <li>
                 <a href="#"></a>
               </li>
-            </ul>   
+            </ul>
           </div>
           <div class="catalog-items">
             <article class="item-card">
@@ -271,7 +269,7 @@
                 </li>
               </ul>
             </nav>
-          </div>    
+          </div>
         </div>
         <div class="footer-bottom">
           <div class="footer-company-info">
@@ -282,7 +280,7 @@
             <ul>
               <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
               <li><a class="social-btn social-btn-vk" href="#">Фейсбук</a></li>
-              <li class="social-btn social-btn-vk" href="#">Инстаграм</a></li>
+              <li><a class="social-btn social-btn-vk" href="#">Инстаграм</a></li>
             </ul>
           </div>
           <div class="footer-copyright">
