@@ -1,0 +1,51 @@
+body{
+  font-size: 13px;
+  line-height: 24px;
+  color: rgb(0,0,0);
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+h1,
+.popular-brands h2,
+.popular-items-title h2{
+  font-size: 30px;
+  line-height: 30px;
+  color: rgb(50,66,92);
+  font-weight: normal;
+}
+.promo-box h2{
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(255,255,255);
+  font-weight: bold;
+}
+.promo-slider h2{
+  font-size: 36px;
+  line-height: 30px;
+  color: rgb(255,255,255);
+  font-weight: bold;
+}
+.item-card h2{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+.service-features h2,
+.items-information h2{
+  font-size: 30px;
+  line-height: 24px;
+}
+.service-slide h2{
+  font-size: 36px;
+  line-height: 24px;
+  color: rgb(50,66,92);
+  font-weight: normal;
+}
+.company-profile h2{
+  font-size: 30px;
+  line-height: 24px;
+}
+.pop-up-catalog h2{
+  font-size: 30px;
+  line-height: 18px;
+}
