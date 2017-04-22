@@ -8,7 +8,7 @@
   <body>
     <header class="main-header">
       <div class="main-header-top">
-        <div class="container">
+        <div class="container clearfix">
           <a class="logo">Техномарт</a>
 		      <form class="header-form-search" action="https://echo.htmlacademy.ru" method="post">
 		        <input id="form-search" type="search" name="search" placeholder="Поиск:">
@@ -20,7 +20,7 @@
 		    </div>
 	    </div>
 	    <div class="container">
-        <div class="main-header-middle">
+        <div class="main-header-middle clearfix">
 	        <div class="header-info header-block">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
           </div>
@@ -61,52 +61,57 @@
       </div>
     </header>
     <main>
-      <div class="promo container">
-        <div class="promo-box">
+      <div class="promo container clearfix">
+        <div class="promo-box materials">
        	  <h2>Материалы</h2>
        	  <a class="btn" href="#">На любой вкус</a>
        	</div>
-       	<div class="promo-box">
+       	<div class="promo-box instruments">
        	  <h2>Инструмент</h2>
        	  <a class="btn" href="#">На все случаи</a>
        	</div>
-       	<div class="promo-box">
+       	<div class="promo-box tehnical">
        	  <h2>Техника</h2>
        	  <a class="btn" href="#">Для стройки</a>
        	</div>
-       	<div class="promo-box">
-       	  <h2>Скидки 50%</h2>
-       	  <a class="btn" href="#">На 350 товаров</a>
-       	</div>
-       	<div class="promo-box">
-       	  <h2>Доставка</h2>
-       	  <a class="btn" href="#">Бесплатно</a>
-       	</div>
+
         <div class="promo-slider">
           <button class="btn promo-prev" type="button"></button>
-       	    <ul>
- 		          <li class="slide">
- 		            <img src="img/promo-slider-one.jpg" width="620" height="266" alt="Перфораторы">
-					      <h2>Перфораторы</h2>
+            <ul>
+              <li class="slide">
+                <img src="img/promo-slider-one.jpg" width="620" height="266" alt="Перфораторы">
+                <h2>Перфораторы</h2>
                 <p>Настоящие мужские игрушки</p>
                 <a class="btn" href="catalog.html">Открыть каталог</a>
- 		          </li>
-			        <li class="slide">
-			          <img src="img/promo-slider-two.jpg"width="620" height="266" alt="Дрели">
-					      <h2>Дрели</h2>
+              </li>
+              <li class="slide">
+                <img src="img/promo-slider-two.jpg"width="620" height="266" alt="Дрели">
+                <h2>Дрели</h2>
                 <p>Соседям на радость!</p>
                 <a class="btn" href="#">Открыть каталог</a>
-			        </li>
-		        </ul>
+              </li>
+            </ul>
           <button class="btn promo-next" type="button"></button>
           <div class="promo-slider-switches">
             <span class="dot"></span>
             <span class="dot"></span>
           </div>
+        </div>
+
+       	<div class="promo-box sales">
+       	  <h2>Скидки 50%</h2>
+       	  <a class="btn" href="#">На 350 товаров</a>
        	</div>
+        
+       	<div class="promo-box delivery">
+       	  <h2>Доставка</h2>
+       	  <a class="btn" href="#">Бесплатно</a>
+       	</div>
+
+        
       </div>
-      <div class="popular-items container">
-        <div class="popular-items-title">
+      <div class="popular-items container clearfix">
+        <div class="popular-items-title clearfix">
        	  <h2>Популярные товары:</h2>
        	  <a class="btn" href="#">Все популярные товары</a>
        	</div>
@@ -144,7 +149,7 @@
        	</article>
       </div>
       <div class="popular-brands container">
-        <div class="popular-brands-title">
+        <div class="popular-brands-title clearfix">
        	  <h2>Популярные производители:</h2>
        	  <a class="btn" href="#">Все производители</a>
        	</div>
@@ -166,12 +171,12 @@
       	    <p>Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
-          <div class="service-slider-menu">
+          <div class="service-slider-menu clearfix">
       	    <button class="service-slider-delivery" type="button">Доставка</button>
       	    <button class="service-slider-guarantee" type="button">Гарантия</button>
       	    <button class="service-slider-credit" type="button">Кредит</button>
       	  </div>
-      	  <div class="service-slider">
+      	  <div class="service-slider clearfix">
        	    <ul>
  		          <li class="service-slide">
  		            <img src="img/service-delivery.jpg" width="467"  height="261" alt="Доставка">
@@ -181,7 +186,7 @@
                 Ведь мы неплохо заработаем,
                 поднимая его на ваш этаж!</p>
  		          </li>
-			        <li class="service-slide">
+			        <li class="service-slide clearfix">
 			          <img src="img/service-garanty.jpg" width="465"  height="285" alt="Гарантия">
                 <h2>Гарантия</h2>
                 <p>Если купленный у нас товар поломается или заискрит,
@@ -198,7 +203,7 @@
        	  </div>
         </div>
       </div>
-      <div class="company-profile container">
+      <div class="company-profile container clearfix">
         <div class="company-info">
           <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для ремонта и
@@ -210,20 +215,20 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="btn">Подробнее о компании</a>
+          <a class="btn" href="#">Подробнее о компании</a>
         </div>
         <div class="company-contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br>
              заехав в наш офис:</p>
           <img src="img/map.jpg" width="300" height="158" alt="Карта">
-          <a href="#"> Заблудились? Напишите нам!</a>
+          <a class="btn"  href="#"> Заблудились? Напишите нам!</a>
         </div>
       </div>
     </main>
 
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer-top">
           <div class="footer-top-left">
             <a class="footer-logo" href="#">Техномарт</a>
@@ -266,7 +271,9 @@
             </nav>
           </div>
         </div>
-        <div class="footer-bottom">
+      </div>
+      <div class="footer-bottom">
+        <div class="container clearfix">
           <div class="footer-company-info">
             <p>© 2010–2017 Компания «Техномарт»
               Все права защищены</p>
@@ -278,11 +285,15 @@
               <li><a class="social-btn social-btn-vk" href="#">Инстаграм</a></li>
             </ul>
           </div>
-          <div class="footer-copyright">
-            <p>Обратная связь:</p>
-            <a class="btn" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            <p>Разработано-</p>
-            <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <div class="footer-copyright clearfix">
+            <div class="footer-copyright-left">
+              <p>Обратная связь:</p>
+              <a class="btn" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="footer-copyright-right"> 
+              <p>Разработано-</p>
+              <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            </div>
           </div>
         </div>
       </div>
@@ -298,6 +309,6 @@
             <textarea id="mail-field" name="mail-text" rows="5" placeholder="В свободной форме"></textarea>
             <input class="btn" type="submit" value="Отправить">
           </form>
-        </div>
+    </div>
   </body>
 </html>

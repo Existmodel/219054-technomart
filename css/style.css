@@ -1,3 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.content-box-component {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pop-up,
+.pop-up-catalog,
+.slide:nth-child(2),
+.service-slide:nth-child(2),
+.service-slide:nth-child(3) {
+  display: none;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 body {
   font-size: 13px;
   line-height: 24px;
@@ -56,3 +82,193 @@ h1,
   line-height: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
+
+/*ХЕДЕР*/
+.main-header{
+  background-color: #f3f7f8;
+  min-height: 320px;
+  margin-bottom:60px;
+}
+
+.main-header-top{
+  background-color: #33445a;
+  min-height: 42px;
+}
+.main-header-middle{
+   min-height: 158px;
+}
+.logo{
+  width: 220px;
+  float: left;
+  background-color: #ff5357;
+  margin-right: 10px;
+  height: 42px;
+}
+.header-form-search{
+  float: left;
+  width: 240px;
+}
+.header-order-btn{
+  float: right;
+  width: 150px;
+  background-color: #6db254;
+  height: 42px;
+}
+.header-block{
+  width: 300px;
+  min-height: 158px;
+  float: left;
+  margin-right: 20px;
+}
+.header-block:last-child {
+  margin-right: 0;
+  float: right;
+}
+
+.header-nav li {
+  display: inline-block;
+}
+
+.header-nav{
+  margin: 0;
+}
+.main-header-bottom{
+  min-height: 61px;
+  background-color: #3d546e;
+}
+
+ /*ОСНОВА*/
+ /*ПРОМО*/
+.promo-box {
+  min-height: 123px;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.materials {
+  background-color: #ffbf47;
+  float: left;
+}
+.delivery {
+  background-color: #ffbf47;
+  float: right;
+  margin-right: 0;
+}
+.instruments {
+  background-color: #3bbce3;
+  float: left;
+}
+.tehnical {
+  background-color: #dc91d8;
+  margin-right: 0;
+  float: left;
+}
+.sales {
+  background-color: #8ed78f;
+  float: right;
+  margin-right: 0;
+}
+.promo-slider {
+  width: 620px;
+  float: left;
+}
+.popular-items-title,
+.popular-brands-title { 
+  background-color: #f9f5f0;
+  min-height: 89px;
+  margin-bottom: 21px;
+}
+.item-card {
+  float: left;
+  width: 220px;
+  min-height: 318px;
+  margin-right: 20px;
+}
+.item-card:last-child {
+  margin-right: 0;
+}
+.popular-brands-cards {
+  font-size: 0;
+}
+.popular-brands-cards a {
+  display: inline-block;
+  height: 144px;
+  width: 220px;
+  margin-right: 20px;
+  vertical-align: top;
+}
+.popular-brands-cards a:nth-child(4n) {
+  margin-right: 0;
+}
+.service {
+  background-color:  #f4f8fa; 
+  min-height: 522px;
+}
+.service-slider-menu {
+  float: left;
+  width: 240px;
+}
+.service-slide {
+  float: right;
+  width: 640px;
+}
+.service-slide img{
+  float: right;
+}
+.company-profile {
+  min-height: 536px;
+}
+.company-info{
+  float: left;
+  width: 540px;
+}
+.company-contacts {
+  float: right;
+  width: 330px;
+}
+
+
+.main-footer {
+  min-height: 300px;
+  background-color: #3d546e;
+}
+.footer-top {
+  min-height: 193px;
+}
+.footer-top-left {
+  float: left;
+}
+.footer-navigation-top li {
+  display: inline-block;
+}
+.footer-navigation-bottom li {
+  display: inline-block;
+}
+.footer-top-right {
+  float: right;
+}
+.footer-bottom {
+  background-color: #33445b;
+  min-height: 107px;
+}
+.footer-company-info {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+.footer-social {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+.footer-copyright {
+  float: right;
+  width: 300px;
+}
+.footer-copyright-left {
+  float: left;
+}
+.footer-copyright-right {
+  float: right;
+}
+/*КАТАЛОГ*/
