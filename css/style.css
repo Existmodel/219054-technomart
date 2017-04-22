@@ -30,7 +30,7 @@ body {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
 }
-h1,
+.main-title-catalog,
 .popular-brands h2,
 .popular-items-title h2 {
   font-size: 30px;
@@ -87,9 +87,10 @@ h1,
 .main-header{
   background-color: #f3f7f8;
   min-height: 320px;
+}
+.header-index{
   margin-bottom:60px;
 }
-
 .main-header-top{
   background-color: #33445a;
   min-height: 42px;
@@ -125,11 +126,22 @@ h1,
   float: right;
 }
 
+.header-nav,
+.breadcrumbs,
+.sorting-menu,
+.catalog-switches-list,
+.footer-navigation-top,
+.footer-navigation-bottom {
+  padding:0;
+  list-style: none;
+  font-size: 0;
+} 
 .header-nav li {
   display: inline-block;
+  font-size: 17px;
 }
-
-.header-nav{
+.header-nav,
+.breadcrumbs{
   margin: 0;
 }
 .main-header-bottom{
@@ -178,13 +190,18 @@ h1,
   min-height: 89px;
   margin-bottom: 21px;
 }
+.item-card-block{
+  font-size: 0;
+}
 .item-card {
-  float: left;
+  display: inline-block;
   width: 220px;
   min-height: 318px;
   margin-right: 20px;
+  font-size: 17px;
+  vertical-align: top;
 }
-.item-card:last-child {
+.popular-items .item-card:last-child {
   margin-right: 0;
 }
 .popular-brands-cards {
@@ -226,8 +243,6 @@ h1,
   float: right;
   width: 330px;
 }
-
-
 .main-footer {
   min-height: 300px;
   background-color: #3d546e;
@@ -238,11 +253,10 @@ h1,
 .footer-top-left {
   float: left;
 }
-.footer-navigation-top li {
+.footer-navigation-top li,
+.footer-navigation-bottom li  {
   display: inline-block;
-}
-.footer-navigation-bottom li {
-  display: inline-block;
+    font-size: 18px;
 }
 .footer-top-right {
   float: right;
@@ -272,3 +286,44 @@ h1,
   float: right;
 }
 /*КАТАЛОГ*/
+
+.main-title-catalog {
+  background-color: #f2f6f8;
+  min-height:89px;
+  margin:0;
+  margin-bottom: 7px;
+}
+.catalog-title {
+  min-height: 59px;
+}
+.breadcrumbs li {
+  display:inline-block;
+  font-size: 13px;
+}
+.filter {
+  width: 220px;
+  float: left;
+}
+.filter-title {
+  background-color: #f7f3ec;
+  min-height: 38px;
+}
+.sorting {
+  width: 700px;
+  float: right;
+}
+.sorting-menu li {
+  display: inline-block;
+  font-size: 13px;
+}
+.catalog-items .item-card:nth-child(3n) {
+  margin-right: 0;
+}
+.catalog-switches-list li {
+  display:inline-block;
+  font-size: 13px;
+}
+.items-information { 
+  min-height: 261px;
+  background-color: #f2f6f8;
+}

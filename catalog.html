@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт Каталог</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header header-catalog">
       <div class="main-header-top">
         <div class="container clearfix">
           <a class="logo" href="index.html">Техномарт</a>
@@ -79,9 +80,9 @@
             </li>
 		      </ul>
         </div>
-        <h1>Перфораторы</h1>
-        <aside>
-          <div class="filter">
+        <h1 class="main-title-catalog">Перфораторы</h1>
+        <aside class="filter">
+          <div class="filter-title">
             <p>Фильтр:</p>
           </div>
           <form action="https://echo.htmlacademy.ru" method="post">
@@ -112,10 +113,10 @@
             </fieldset>
           </form>
         </aside>
-        <section>
-          <div class="sorting">
+        <section class="sorting">
+          <div class="sorting-menu-block">
             <p>Сортировка:</p>
-            <ul>
+            <ul class="sorting-menu">
               <li>
                 <a href="#">По цене</a>
               </li>
@@ -130,80 +131,82 @@
               </li>
             </ul>
           </div>
-          <div class="catalog-items">
-            <article class="item-card">
-              <div class="item-img-wrapper">
-       	        <img src="http://placehold.it/150x100" alt="Перфоратор">
-		          </div>
-              <h2>Перфоратор BOSCH BFG 3000</h2>
-              <del>32500 P.</del>
-              <a href="#" class="btn"><ins>25500 P.</ins></a>
-            </article>
-            <article class="item-card">
-              <div class="item-img-wrapper">
-       	       <img src="img/perforator-three.jpg"  width="218" height="148" alt="Перфоратор">
-		          </div>
-              <h2>Перфоратор BOSCH BFG 6000</h2>
-              <del>22500 P.</del>
-              <a href="#" class="btn"><ins>25500 P.</ins></a>
-            </article>
-            <article class="item-card">
-              <a class="btn-buy" href="#">Купить</a>
-              <a class="btn-bookmarks" href="#">В закладки</a>
-              <h2>Перфоратор BOSCH BFG 2000</h2>
-              <del>30500 P.</del>
-              <a href="#" class="btn"><ins>25500 P.</ins></a>
-            </article>
-            <article class="item-card">
-              <div class="item-img-wrapper">
-       	        <img src="img/perforator-two.jpg"  width="218" height="148" alt="Перфоратор">
-		          </div>
-              <h2>Перфоратор BOSCH BFG 3000</h2>
-              <del>32500 P.</del>
-              <a href="#" class="btn"><ins>25500 P.</ins></a>
-            </article>
-            <article class="item-card">
-              <div class="item-img-wrapper">
-       	        <img src="img/perforator-three.jpg"  width="218" height="148" alt="Перфоратор">
-		          </div>
-              <h2>Перфоратор BOSCH BFG 6000</h2>
-              <del>32500 P.</del>
-              <a href="#" class="btn"><ins>25500 P.</ins></a>
-            </article>
-            <article class="item-card">
-              <div class="item-img-wrapper">
-       	        <img src="img/perforator-four.jpg"  width="218" height="148" alt="Перфоратор">
-		          </div>
-              <h2>Перфоратор BOSCH BFG 2000</h2>
-              <del>22500 P.</del>
-              <a href="#" class="btn"><ins>25500 P.</ins></a>
-            </article>
-            <article class="item-card">
-              <div class="item-img-wrapper">
-       	        <img src="img/perforator-two.jpg"  width="218" height="148" alt="Перфоратор">
-		          </div>
-              <h2>Перфоратор BOSCH BFG 3000</h2>
-              <del>30500 P.</del>
-              <a href="#" class="btn"><ins>25500 P.</ins></a>
-            </article>
-            <article class="item-card">
-              <div class="item-img-wrapper">
-       	        <img src="img/perforator-three.jpg"  width="218" height="148" alt="Перфоратор">
-		          </div>
-              <h2>Перфоратор BOSCH BFG 6000</h2>
-              <del>32500 P.</del>
-              <a href="#" class="btn"><ins>25500 P.</ins></a>
-            </article>
-            <article class="item-card">
-              <div class="item-img-wrapper">
-       	        <img src="img/perforator-four.jpg"  width="218" height="148" alt="Перфоратор">
-		          </div>
-              <h2>Перфоратор BOSCH BFG 2000</h2>
-              <del>32500 P.</del>
-              <a href="#" class="btn"><ins>25500 P.</ins></a>
-            </article>
+            <div class="catalog-items">
+              <div class="item-card-block">
+                <article class="item-card">
+                  <div class="item-img-wrapper">
+           	        <img src="img/perforator-two.jpg"  width="218" height="148" alt="Перфоратор">
+    		          </div>
+                  <h2>Перфоратор BOSCH BFG 3000</h2>
+                  <del>32500 P.</del>
+                  <a href="#" class="btn"><ins>25500 P.</ins></a>
+                </article>
+                <article class="item-card">
+                  <div class="item-img-wrapper">
+           	       <img src="img/perforator-three.jpg"  width="218" height="148" alt="Перфоратор">
+    		          </div>
+                  <h2>Перфоратор BOSCH BFG 6000</h2>
+                  <del>22500 P.</del>
+                  <a href="#" class="btn"><ins>25500 P.</ins></a>
+                </article>
+                <article class="item-card">
+                  <a class="btn-buy" href="#">Купить</a>
+                  <a class="btn-bookmarks" href="#">В закладки</a>
+                  <h2>Перфоратор BOSCH BFG 2000</h2>
+                  <del>30500 P.</del>
+                  <a href="#" class="btn"><ins>25500 P.</ins></a>
+                </article>
+                <article class="item-card">
+                  <div class="item-img-wrapper">
+           	        <img src="img/perforator-two.jpg"  width="218" height="148" alt="Перфоратор">
+    		          </div>
+                  <h2>Перфоратор BOSCH BFG 3000</h2>
+                  <del>32500 P.</del>
+                  <a href="#" class="btn"><ins>25500 P.</ins></a>
+                </article>
+                <article class="item-card">
+                  <div class="item-img-wrapper">
+           	        <img src="img/perforator-three.jpg"  width="218" height="148" alt="Перфоратор">
+    		          </div>
+                  <h2>Перфоратор BOSCH BFG 6000</h2>
+                  <del>32500 P.</del>
+                  <a href="#" class="btn"><ins>25500 P.</ins></a>
+                </article>
+                <article class="item-card">
+                  <div class="item-img-wrapper">
+           	        <img src="img/perforator-four.jpg"  width="218" height="148" alt="Перфоратор">
+    		          </div>
+                  <h2>Перфоратор BOSCH BFG 2000</h2>
+                  <del>22500 P.</del>
+                  <a href="#" class="btn"><ins>25500 P.</ins></a>
+                </article>
+                <article class="item-card">
+                  <div class="item-img-wrapper">
+           	        <img src="img/perforator-two.jpg"  width="218" height="148" alt="Перфоратор">
+    		          </div>
+                  <h2>Перфоратор BOSCH BFG 3000</h2>
+                  <del>30500 P.</del>
+                  <a href="#" class="btn"><ins>25500 P.</ins></a>
+                </article>
+                <article class="item-card">
+                  <div class="item-img-wrapper">
+           	        <img src="img/perforator-three.jpg"  width="218" height="148" alt="Перфоратор">
+    		          </div>
+                  <h2>Перфоратор BOSCH BFG 6000</h2>
+                  <del>32500 P.</del>
+                  <a href="#" class="btn"><ins>25500 P.</ins></a>
+                </article>
+                <article class="item-card">
+                  <div class="item-img-wrapper">
+           	        <img src="img/perforator-four.jpg"  width="218" height="148" alt="Перфоратор">
+    		          </div>
+                  <h2>Перфоратор BOSCH BFG 2000</h2>
+                  <del>32500 P.</del>
+                  <a href="#" class="btn"><ins>25500 P.</ins></a>
+                </article>
+            </div>
             <div class="catalog-switches-pages">
-		          <ul>
+		          <ul class="catalog-switches-list">
                 <li>
                   <a class="btn" href="#">1</a>
                 </li>
