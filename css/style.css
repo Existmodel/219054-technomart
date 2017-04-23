@@ -29,6 +29,7 @@ body {
   line-height: 24px;
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0;
 }
 .main-title-catalog,
 .popular-brands h2,
@@ -82,8 +83,6 @@ body {
   line-height: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
-
-/*ХЕДЕР*/
 .main-header{
   background-color: #f3f7f8;
   min-height: 320px;
@@ -126,6 +125,8 @@ body {
   float: right;
 }
 
+
+.sorting,
 .header-nav,
 .breadcrumbs,
 .sorting-menu,
@@ -149,8 +150,6 @@ body {
   background-color: #3d546e;
 }
 
- /*ОСНОВА*/
- /*ПРОМО*/
 .promo-box {
   min-height: 123px;
   width: 300px;
@@ -184,13 +183,22 @@ body {
   width: 620px;
   float: left;
 }
+.promo-slider h2{
+  margin: 0;
+}
+.promo-slider ul,
+.footer-social ul,
+.service-slider ul {
+  padding:0;
+  list-style: none;
+}
 .popular-items-title,
 .popular-brands-title { 
   background-color: #f9f5f0;
   min-height: 89px;
   margin-bottom: 21px;
 }
-.item-card-block{
+.item-card-block {
   font-size: 0;
 }
 .item-card {
@@ -201,7 +209,7 @@ body {
   font-size: 17px;
   vertical-align: top;
 }
-.popular-items .item-card:last-child {
+.row .item-card:last-child {
   margin-right: 0;
 }
 .popular-brands-cards {
@@ -256,7 +264,7 @@ body {
 .footer-navigation-top li,
 .footer-navigation-bottom li  {
   display: inline-block;
-    font-size: 18px;
+  font-size: 18px;
 }
 .footer-top-right {
   float: right;
@@ -312,18 +320,33 @@ body {
   width: 700px;
   float: right;
 }
+.sorting-menu,
 .sorting-menu li {
   display: inline-block;
   font-size: 13px;
 }
-.catalog-items .item-card:nth-child(3n) {
-  margin-right: 0;
+.sorting-menu-title{
+  display: inline-block;
+  font-size: 13px;
 }
+
+.catalog-switches-list,
 .catalog-switches-list li {
   display:inline-block;
   font-size: 13px;
 }
+.catalog-switches-pages a {
+  font-size: 13px;
+}
 .items-information { 
-  min-height: 261px;
   background-color: #f2f6f8;
+}
+.items-information h2{
+  padding-top: 67px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+.items-information p{
+  padding-bottom: 68px;
+  margin:0;
 }
