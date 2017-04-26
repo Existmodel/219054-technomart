@@ -5,31 +5,34 @@
     <title>HTML Academy: Техномарт Каталог</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header header-catalog">
       <div class="main-header-top">
         <div class="container clearfix">
-          <a class="logo" href="index.html">Техномарт</a>
-		      <form class="header-form-search" action="https://echo.htmlacademy.ru" method="post">
-		        <input id="form-search" type="search" name="search" placeholder="Поиск:">
-		        <label for="form-search"></label>
+          <a class="logo to-left" href="index.html">Техномарт</a>
+          <form class="header-form-search to-left" action="https://echo.htmlacademy.ru" method="post">
+            <input id="form-search" type="search" name="search" placeholder="Поиск:">
+            <label for="form-search"></label>
           </form>
-          <a class="header-bookmarks" href="#">Закладки: 0</a>
-          <a class="header-cart" href="#">Корзина: 10</a>
-          <a class="header-order-btn" href="#">Оформить заказ</a>
-		    </div>
-	    </div>
+          <div class="btn-header-top to-right">
+            <a class="header-bookmarks" href="#">Закладки: 0</a>
+            <a class="header-cart" href="#">Корзина: 10</a>
+            <a class="header-order-btn" href="#">Оформить заказ</a>
+          </div>
+        </div>
+      </div>
 	    <div class="container">
         <div class="main-header-middle clearfix">
-	        <div class="header-info header-block">
+	        <div class="header-info header-block to-left">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
           </div>
-	        <div class="header-contacts header-block">
+	        <div class="header-contacts header-block to-left">
 	  	      <p>+7 (812) 555-05-55</p>
 	  	      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 	        </div>
-          <div class="user-block-catalog header-block">
+          <div class="user-block-catalog header-block to-right">
        	    <a href="#">Равшан Джамшутович</a>
             <a href="#">Выход</a>
 			      <a href="#">Мои заказы</a>
@@ -81,7 +84,7 @@
 		      </ul>
         </div>
         <h1 class="main-title-catalog">Перфораторы</h1>
-        <aside class="filter">
+        <aside class="filter to-left">
           <div class="filter-title">
             <p>Фильтр:</p>
           </div>
@@ -113,7 +116,7 @@
             </fieldset>
           </form>
         </aside>
-        <section class="sorting">
+        <section class="sorting to-right">
           <div class="sorting-menu-block">
             <p class="sorting-menu-title">Сортировка:</p>
             <ul class="sorting-menu">
@@ -236,16 +239,15 @@
         </div>
       </div>
     </main>
- <footer class="main-footer">
+    <footer class="main-footer">
       <div class="container clearfix">
         <div class="footer-top">
-          <div class="footer-top-left">
+          <div class="to-left">
             <a class="footer-logo" href="#">Техномарт</a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
                +7 (812) 555-05-55</p>
           </div>
-          <div class="footer-top-right">
-            <nav class="footer-navigation">
+            <nav class="footer-navigation to-right">
               <ul class="footer-navigation-top">
                 <li>
                   <a href="#">Компания</a>
@@ -278,28 +280,27 @@
                 </li>
               </ul>
             </nav>
-          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <div class="container clearfix">
-          <div class="footer-company-info">
+          <div class="footer-company-info footer-block to-left">
             <p>© 2010–2017 Компания «Техномарт»
               Все права защищены</p>
           </div>
-          <div class="footer-social">
+          <div class="footer-social footer-block to-left">
             <ul class="footer-social-list">
               <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
               <li><a class="social-btn social-btn-vk" href="#">Фейсбук</a></li>
               <li><a class="social-btn social-btn-vk" href="#">Инстаграм</a></li>
             </ul>
           </div>
-          <div class="footer-copyright clearfix">
-            <div class="footer-copyright-left">
+          <div class="footer-copyright footer-block clearfix to-right">
+            <div class="to-left">
               <p>Обратная связь:</p>
               <a class="btn" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
-            <div class="footer-copyright-right"> 
+            <div class="to-right"> 
               <p>Разработано-</p>
               <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             </div>
