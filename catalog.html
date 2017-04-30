@@ -90,6 +90,8 @@
             </li>
 		      </ul>
         </div>
+
+
         <h1 class="main-title-catalog">Перфораторы</h1>
         <div class="main-flex">
         <aside class="filter ">
@@ -97,7 +99,7 @@
             <p>Фильтр:</p>
           </div>
           <form action="https://echo.htmlacademy.ru" method="post">
-	          <fieldset>
+	          <fieldset class="filter-price">
 	              <legend>Цена</legend>
 	              <!--БЛОК ЦЕНА-ПОЛЗУНОК-->
 	          </fieldset>
@@ -142,7 +144,7 @@
               </li>
             </ul>
           </div>
-          <div class="catalog-items">
+          <div class="catalog-items popular-items">
                 <div class="item-card-block">
                  <div class="row">
                   <article class="item-card">
@@ -250,11 +252,13 @@
         </div>
       </div>
     </main>
-    <footer class="main-footer">
+
+    
+        <footer class="main-footer">
       <div class="container">
         <div class="footer-top">
           <div class="footer-logo-info">
-            <a class="footer-logo" href="index.html">Техномарт</a>
+            <a class="footer-logo" href="#">Техномарт</a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
                +7 (812) 555-05-55</p>
           </div>
@@ -302,18 +306,18 @@
           <div class="footer-social footer-block">
             <ul class="footer-social-list">
               <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-              <li><a class="social-btn social-btn-vk" href="#">Фейсбук</a></li>
-              <li><a class="social-btn social-btn-vk" href="#">Инстаграм</a></li>
+              <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+              <li><a class="social-btn social-btn-ins" href="#">Инстаграм</a></li>
             </ul>
           </div>
           <div class="footer-copyright footer-block">
-            <div>
+            <div class="footer-copyright-left">
               <p>Обратная связь:</p>
-              <a class="btn" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
-            <div>
+            <div class="footer-copyright-right">
               <p>Разработано-</p>
-              <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+              <a class="" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             </div>
           </div>
         </div>
@@ -322,8 +326,8 @@
     <!-- МОДАЛЬНОЕ ОКНО -->
         <div class="pop-up-catalog">
           <h2>Товар добавлен в корзину!</h2>
-          <a href="#">Оформить заказ</a>
-          <a href="#">Продолжить покупки</a>
+          <a class="btn" href="#">Оформить заказ</a>
+          <a class="btn" href="#">Продолжить покупки</a>
         </div>
   </body>
 </html>
