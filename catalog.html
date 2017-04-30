@@ -17,10 +17,8 @@
             <a class="logo" href="index.html">Техномарт</a>
 
     	    <form class="header-form-search" action="https://echo.htmlacademy.ru" method="post">
-    	  	<button type="submit"></button>
-	    	  <input id="form-search" type="search" name="search" placeholder="Поиск:">
-	
-	    	  <label for="form-search"></label>
+            <label for="form-search"></label>
+	    	    <input id="form-search" type="search" name="search" placeholder="Поиск:">
     	    </form>
   		    <div class="btn-header-top">
       		<a class="header-bookmarks" href="#">Закладки: 0</a>
@@ -39,10 +37,14 @@
 	  	      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 	        </div>
           <div class="user-block-catalog header-block to-right">
-       	    <a href="#">Равшан Джамшутович</a>
-            <a href="#">Выход</a>
-			      <a href="#">Мои заказы</a>
-			      <a href="#">Личный кабинет</a>
+       	    <div class="user-info">
+              <a href="#">Равшан Джамшутович</a>
+              <a href="#">Выход</a>
+            </div>
+            <div class="user-account">
+  			      <a href="#">Мои заказы</a>
+  			      <a href="#">Личный кабинет</a>
+            </div>
           </div>
 	      </div>
 	      <div class="main-header-bottom">
@@ -103,7 +105,7 @@
 	              <legend>Цена</legend>
 	              <!--БЛОК ЦЕНА-ПОЛЗУНОК-->
 	          </fieldset>
-	          <fieldset>
+	          <fieldset class="filter-brand">
 	            <legend>Производители</legend>
               <input id="brand-1" type="checkbox" name="brand-1" checked>
               <label for="brand-1">Bosch</label>
@@ -116,30 +118,30 @@
               <input id="brand-5" type="checkbox" name="brand-5">
               <label for="brand-5">Hitachi</label>
             </fieldset>
-		        <fieldset>
+		        <fieldset class="filter-power">
 		          <legend>Питание</legend>
-              <input id="battery-power" type="radio" name="energy" value="accumulator">
+              <input id="battery-power" type="radio" name="energy" value="accumulator" checked>
               <label for="battery-power">Аккумуляторные</label>
-              <input type="radio" name="energy" value="electronetwork" checked>
+              <input id="network-power" type="radio" name="energy" value="electronetwork">
               <label for="network-power">Сетевые</label>
-              <input id="network-power" type="submit" value="Показать">
+              <input class="filter-btn" type="submit" value="Показать">
             </fieldset>
           </form>
         </aside>
         <section class="sorting to-right">
           <div class="sorting-menu-block">
-            <p class="sorting-menu-title">Сортировка:</p>
+            <p>Сортировка:</p>
             <ul class="sorting-menu">
-              <li>
+              <li class="sorting-menu-item">
                 <a href="#">По цене</a>
               </li>
-              <li>
+              <li class="sorting-menu-item">
                  <a href="#">По типу</a>
               </li>
-              <li>
+              <li class="sorting-menu-item">
                 <a href="#">По функционалу</a>
               </li>
-              <li>
+              <li class="sorting-menu-item">
                 <a href="#"></a>
               </li>
             </ul>
