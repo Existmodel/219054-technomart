@@ -30,7 +30,8 @@
       <div class="container">
         <div class="main-header-middle">
 	        <div class="header-info header-block">
-            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <p>Интернет-магазин строительных материалов<br>
+             и инструментов для ремонта</p>
           </div>
 	        <div class="header-contacts header-block">
 	  	      <p>+7 (812) 555-05-55</p>
@@ -51,13 +52,13 @@
 	        <nav class="main-header-bottom">
             <ul  class="header-nav">
               <li class="header-nav-item">
-                <a href="#">Главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li class="header-nav-item">
                 <a href="#">Компания</a>
               </li>
               <li class="header-nav-item">
-                <a href="catalog.html">Каталог</a>
+                <a>Каталог</a>
               </li>
               <li class="header-nav-item">
                 <a href="#">Новости</a>
@@ -100,24 +101,24 @@
           </div>
           <form action="https://echo.htmlacademy.ru" method="post">
 	          <fieldset class="filter-price">
-	              <legend>Цена</legend>
+	              <legend class="filter-form-caption">Цена:</legend>
 	              <!--БЛОК ЦЕНА-ПОЛЗУНОК-->
 	          </fieldset>
 	          <fieldset class="filter-brand">
-	            <legend>Производители</legend>
+	            <legend class="filter-form-caption">Производители:</legend>
               <input id="brand-1" type="checkbox" name="brand-1" checked>
               <label for="brand-1">Bosch</label>
               <input id="brand-2" type="checkbox" name="brand-2">
               <label for="brand-2">Интерскол</label>
               <input id="brand-3" type="checkbox" name="brand-3" checked>
               <label for="brand-3">Makita</label>
-              <input id="brand-4" type="checkbox" name="brand-4">
+              <input id="brand-4" type="checkbox" name="brand-4" disabled >
               <label for="brand-4">Dewalt</label>
               <input id="brand-5" type="checkbox" name="brand-5">
               <label for="brand-5">Hitachi</label>
             </fieldset>
 		        <fieldset class="filter-power">
-		          <legend>Питание</legend>
+		          <legend class="filter-form-caption">Питание:</legend>
               <input id="battery-power" type="radio" name="energy" value="accumulator" checked>
               <label for="battery-power">Аккумуляторные</label>
               <input id="network-power" type="radio" name="energy" value="electronetwork">
@@ -152,7 +153,7 @@
                       <img src="img/perforator-two.jpg"  width="218" height="148" alt="Перфоратор">
                     </div>
                     <h2>Перфоратор BOSCH BFG 3000</h2>
-                    <del>32500 P.</del>
+                    <del>22500 P.</del>
                     <a href="#" class="btn"><ins>25500 P.</ins></a>
                   </article>
                   <article class="item-card">
@@ -160,7 +161,7 @@
                      <img src="img/perforator-three.jpg"  width="218" height="148" alt="Перфоратор">
                     </div>
                     <h2>Перфоратор BOSCH BFG 6000</h2>
-                    <del>22500 P.</del>
+                    <del>30500 P.</del>
                     <a href="#" class="btn"><ins>25500 P.</ins></a>
                   </article>
                   <article class="item-card">
@@ -176,7 +177,7 @@
                       <img src="img/perforator-two.jpg"  width="218" height="148" alt="Перфоратор">
                     </div>
                     <h2>Перфоратор BOSCH BFG 3000</h2>
-                    <del>32500 P.</del>
+                    <del>22500 P.</del>
                     <a href="#" class="btn"><ins>25500 P.</ins></a>
                   </article>
                   <article class="item-card">
@@ -234,8 +235,10 @@
                 <li class="catalog-switches-items">
                   <a class="btn" href="#">3</a>
                 </li>
+                <li>
+                <a class="btn btn-next" href="#"> Следующая</a>
+                </li>
 		          </ul>
-		          <a class="btn btn-next" href="#"> Следующая</a>
             </div>
           </div>
         </section>
@@ -255,7 +258,7 @@
       <div class="container">
         <div class="footer-top">
           <div class="footer-logo-info">
-            <a class="footer-logo" href="#">Техномарт</a>
+            <a class="footer-logo" href="index.html">Техномарт</a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
                +7 (812) 555-05-55</p>
           </div>
@@ -268,7 +271,7 @@
                   <a href="#">Новости</a>
                 </li>
                 <li>
-                  <a href="catalog.html">Каталог</a>
+                  <a>Каталог</a>
                 </li>
                 <li>
                   <a href="#">Доставка</a>
