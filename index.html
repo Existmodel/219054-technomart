@@ -24,7 +24,7 @@
 		    </div>
 	     </div>
 	    <div class="container">
-          <div class="main-header-middle">
+        <div class="main-header-middle">
 	        <div class="header-info header-block">
             <p>Интернет-магазин строительных материалов&nbsp;&nbsp; и инструментов для ремонта</p>
           </div>
@@ -329,15 +329,26 @@
     </footer>
     <!-- МОДАЛЬНОЕ ОКНО -->
     <div class="pop-up">
+       <button class="pop-up-close" type="button" title="Закрыть">Закрыть</button>
           <form class="pop-up-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="">
             <label for="name-field">Ваше имя:</label>
             <input id="name-field" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
-            <label for="email-field">Ваше e-mail:</label>
+            <label for="email-field">Ваше e-mail:</label>       
             <input id="email-field" type="email" name="user-email"  placeholder="Для отправки ответа">
             <label for="mail-field">Текст письма:</label>
+            </div>
+            <div class="pop-up-">
             <textarea id="mail-field" name="mail-text" rows="5" placeholder="В свободной форме"></textarea>
             <input class="btn" type="submit" value="Отправить">
           </form>
+      </div>
     </div>
+    <div class="pop-up-map">  
+       <button class="pop-up-close" type="button" title="Закрыть">Закрыть</button>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5926243674755!2d30.3222143!3d59.9389017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1493977907669" width="940" height="448" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="pop-up-overlay"></div>
+    </div>
+   
   </body>
 </html>
