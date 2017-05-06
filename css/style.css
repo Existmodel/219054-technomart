@@ -28,7 +28,7 @@ img {
   box-sizing: border-box;
 }
 /* Временно скрытые элементы */
-.slide:nth-child(2),
+
 .service-slide:nth-child(2),
 .service-slide:nth-child(3) {
   display: none;
@@ -608,6 +608,9 @@ display: flex;
   padding:25px;
   padding-top: 27px;
 }
+.hide-slide {
+  display: none;
+}
 .promo-slider .btn{
   width: 195px;
 }
@@ -1004,9 +1007,9 @@ display: flex;
   position: absolute;
   top:22px;
   right: 0;
-  background-image: url(../img/service-delivery.jpg);
-  width: 443px;
-  height: 258px;
+  background-image: url(../img/service-delivery.png);
+  width: 468px;
+  height: 261px;
   margin: 0;
 }
 
@@ -1015,9 +1018,9 @@ display: flex;
   position: absolute;
   top:0px;
   right: 0;
-  background-image: url(../img/service-garanty.jpg);
-  width: 366px;
-  height: 277px;
+  background-image: url(../img/service-garanty.png);
+  width: 389px;
+  height: 283px;
   margin: 0;
 }
 .service-slide:nth-child(3)::after {
@@ -1025,9 +1028,9 @@ display: flex;
   position: absolute;
   top:0px;
   right: 0;
-  background-image: url(../img/service-credit.jpg);
-  width: 444px;
-  height: 259px;
+  background-image: url(../img/service-credit.png);
+  width: 465px;
+  height: 285px;
   margin: 0;
 }
 
@@ -1041,7 +1044,7 @@ display: flex;
 }
 .service-slide p{
   width: 275px;
-  position: absolute;
+  /*position: absolute;*/
   z-index: 1;
   margin: 0;
 }
@@ -1723,8 +1726,27 @@ input[type="radio"]:disabled + label::before {
   background-color:  #f7f3ec;
   border-radius: 3px;
 }
-.sorting-menu .sorting-menu-up a, 
-.sorting-menu .sorting-menu-down a {
+.sorting-menu-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 470px;
+  margin-left: 100px;
+}
+.sorting-menu-switches {
+display: -ms-flexbox;
+display: flex;
+  -ms-flex-align: center;
+    align-items: center;
+margin:0;
+list-style: none;
+font-size: 13px;
+}
+.sorting-menu-switches .sorting-menu-up a, 
+.sorting-menu-switches .sorting-menu-down a {
   font-size: 0;
 }
 .sorting-menu-up {
@@ -1733,7 +1755,7 @@ input[type="radio"]:disabled + label::before {
   height: 10px;
   background-position: -10px -1472px;
   cursor: pointer;
-  margin-left: 46px;
+  margin-left: 5px;
 }
 .sorting-menu-up:hover {
   background-position: -10px -1502px;
@@ -1757,12 +1779,20 @@ input[type="radio"]:disabled + label::before {
 }
 .sorting-menu{
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+      align-items: center;
+  -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin:0;
   list-style: none;
   font-size: 13px;
+  width: 395px;
 }
 .sorting-menu a{
   font-size: 13px;
@@ -1770,16 +1800,11 @@ input[type="radio"]:disabled + label::before {
   color:#ee3643;
   text-transform: uppercase;
 }
-.sorting-menu-item:first-child a {
-  margin-left: 100px;
-}
 .sorting-menu-item:nth-child(2) a {
-  margin-left: 71px;
   color: #cccccc;
   border-bottom: 1px dotted #ee3643;
 }
 .sorting-menu-item:nth-child(3) a {
-   margin-left: 64px;
   color: #cccccc;
   border-bottom: 1px dotted #ee3643;
 }
@@ -1952,8 +1977,8 @@ input[type="radio"]:disabled + label::before {
   margin:0;
   padding-bottom: 68px;
 }
-
- .pop-up {
+/*СТИЛИ МОДАЛЬНЫХ ОКОН*/
+.pop-up {
   display: none;
   width: 620px;
   position: fixed;
@@ -1969,10 +1994,10 @@ input[type="radio"]:disabled + label::before {
   padding-right: 80px;
   padding-bottom: 37px;
  }
- .pop-up-form {
+.pop-up-form {
   width: 460px;
  }
- .pop-up-form label {
+.pop-up-form label {
   display:block;
   font-size: 18px;
   line-height: 18px;
@@ -2134,4 +2159,46 @@ input[type="radio"]:disabled + label::before {
 }
 .pop-up-close::after {
   transform: rotate(-45deg);
+}
+.popup-content-show {
+  display: block;
+  /*animation: bounce 0.6s;*/
+}
+.popup-map-show {
+  display: block;
+}
+.popup-overlay-show {
+  display: block;
+}
+.popup-error {
+  animation: shake 0.5s;
+}
+/*анимация модального окна*/
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;   
+  }
+  60% {
+    transform: scale(1.1);  
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1; 
+  } 
+  100% {
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }

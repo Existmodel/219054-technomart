@@ -77,14 +77,14 @@
           </div>
        	  <div class="promo-slider">
   	        <button class="promo-prev" type="button"></button>
-    		    <ul>
-    		      <li class="slide">
+    		    <ul class="slide-list">
+    		      <li class="slide slide-one">
     		        <img src="img/promo-slider-one.jpg" width="620" height="266" alt="Перфораторы">
     		        <h2>Перфораторы</h2>
     		        <p>Настроящие мужские игрушки</p>
     		        <a class="btn" href="catalog.html">Открыть каталог</a>
     		      </li>
-    		      <li class="slide">
+    		      <li class="slide slide-two hide-slide">
     		        <img src="img/promo-slider-two.jpg" width="620" height="266" alt="Дрели">
     		        <h2>Дрели</h2>
     		        <p>Соседям на радость!</p>
@@ -97,7 +97,7 @@
       		    <span class="dot slider-dot-two"></span>
     	      </div>
           </div>
-          </div>
+        </div>
         <div class="promo-right">
   	      <div class="promo-box tehnical">
   	       	<h2>Техника</h2>
@@ -200,25 +200,25 @@
       	    <div class="service-slider">
          	    <ul>
    		          <li class="service-slide">
-                  <h2>Доставка</h2>
-                  <p>Мы с удовольствием доставим ваш товар прямо<br>
-                    к вашему подъезду совершенно бесплатно!
-                    Ведь мы неплохо заработаем,<br>
-                    поднимая его на ваш этаж!
-                    </p>
-  			        </li>
-  			        <li class="service-slide">
-  			          <h2>Гарантия</h2>
-                  <p>Если купленный у нас товар поломается или заискрит,<br>
-                    а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-                    Дом уж восстановите как-нибудь сами.</p>             
-  			        </li>
-  			        <li class="service-slide">
-                  <h2>Кредит</h2>
-                  <p>Залезть в долговую яму стало проще!<br>
-                    Кредитные консультанты придут вам на помощь.</p> 
-                  <a class="btn" href="#">Отправить заявку</a>             
-  			        </li>
+	                <h2>Доставка</h2>
+	                <p>Мы с удовольствием доставим ваш товар прямо<br>
+	                  к вашему подъезду совершенно бесплатно!
+	                  Ведь мы неплохо заработаем,<br>
+	                  поднимая его на ваш этаж!
+	                </p>
+  			      </li>
+  			      <li class="service-slide hide-slide ">
+  			        <h2>Гарантия</h2>
+	                <p>Если купленный у нас товар поломается или заискрит,<br>
+	                  а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+	                  Дом уж восстановите как-нибудь сами.</p>             
+  			      </li>
+  			      <li class="service-slide hide-slide ">
+                    <h2>Кредит</h2>
+                    <p>Залезть в долговую яму стало проще!<br>
+                      Кредитные консультанты придут вам на помощь.</p> 
+                    <a class="btn" href="#">Отправить заявку</a>             
+  			      </li>
   		        </ul>
        	    </div>
        	  </div>
@@ -242,8 +242,8 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br>
              заехав в наш офис:</p>
-          <a href="#"><img src="img/map.png" width="300" height="158" alt="Карта"></a>
-          <a class="btn"  href="contact.html"> Заблудились? Напишите нам!</a>
+          <a class="js-open-map" href="#"><img src="img/map.png" width="300" height="158" alt="Карта"></a>
+          <a class="btn pop-up-open"  href="contact.html"> Заблудились? Напишите нам!</a>
         </div>
       </div>
     </main>
@@ -310,7 +310,7 @@
             </div>
             <div class="footer-copyright-right">
               <p>Разработано -</p>
-              <a class="" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
           </div>
         </div>
@@ -344,5 +344,6 @@
        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5926243674755!2d30.3222143!3d59.9389017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1493977907669" width="940" height="448" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="pop-up-overlay"></div>
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
