@@ -45,10 +45,12 @@ if (popupClose) {
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
-    if (popup.classList.contains("popup-content-show")) {
-      popup.classList.remove("popup-content-show");
-      popup.classList.remove("popup-error");
-      popupOverlay.classList.remove("popup-overlay-show");
+    if (popup){
+      if (popup.classList.contains("popup-content-show")) {
+        popup.classList.remove("popup-content-show");
+        popup.classList.remove("popup-error");
+        popupOverlay.classList.remove("popup-overlay-show");
+      }
     }
   }
 });
@@ -78,9 +80,11 @@ if (mapClose){
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
-    if (mapPopup.classList.contains("popup-map-show")) {
-      mapPopup.classList.remove("popup-map-show");
-      popupOverlay.classList.remove("popup-overlay-show");
+    if (mapPopup) {
+      if (mapPopup.classList.contains("popup-map-show")) {
+        mapPopup.classList.remove("popup-map-show");
+        popupOverlay.classList.remove("popup-overlay-show");
+      }
     }
   }
 });
@@ -114,9 +118,11 @@ if (popupToCard) {
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
-    if (popupToCard.classList.contains("popup-content-show")) {
-      popupToCard.classList.remove("popup-content-show");
-      popupOverlay.classList.remove("popup-overlay-show");
+    if (popupToCard) {
+      if (popupToCard.classList.contains("popup-content-show")) {
+        popupToCard.classList.remove("popup-content-show");
+        popupOverlay.classList.remove("popup-overlay-show");
+      }
     }
   }
 });
