@@ -970,17 +970,11 @@ display: flex;
   font-family: "Cuprum", "Arial", sans-serif;
   cursor: pointer;
   font-weight: bold;
-}
-.service-slider-menu  .service-slider-delivery {
-  background-color: #ffffff;
-  color: #32425c;
-}
-.service-slider-menu  .service-slider-delivery:hover {
-  background-color: #32425c;
-  color: #293449;
-}
-.service-slider-menu  .service-slider-guarantee {
   box-shadow:inset 0px -1px 0px 0px #293449;
+}
+.service-slider-menu .active-btn {
+  color: #32425c;
+  background-color: #ffffff;
 }
 .service-slider-menu button:hover {
   color: #293449;
@@ -989,7 +983,9 @@ display: flex;
   color: #32425c;
   background-color: #ffffff;
 }
-
+.service-slider-menu .service-slider-credit {
+  box-shadow: none;
+}
 .service-slide {
   width: 620px;
   position: relative;

@@ -164,6 +164,9 @@ if (slideDeliveryBtn) {
     slideDelivery.classList.toggle("hide-slide");
     slideGuarantee.classList.add("hide-slide");
     slideCredit.classList.add("hide-slide");
+    slideGuaranteeBtn.classList.remove("active-btn");
+    slideCreditBtn.classList.remove("active-btn");
+    slideDeliveryBtn.classList.add("active-btn");
   });
 }
 
@@ -172,6 +175,9 @@ if (slideGuaranteeBtn) {
     slideGuarantee.classList.toggle("hide-slide");
     slideDelivery.classList.add("hide-slide");
     slideCredit.classList.add("hide-slide");
+    slideDeliveryBtn.classList.remove("active-btn");
+    slideCreditBtn.classList.remove("active-btn");
+    slideGuaranteeBtn.classList.add("active-btn");
   });
 }
 
@@ -180,5 +186,8 @@ if (slideCreditBtn) {
     slideCredit.classList.toggle("hide-slide");
     slideDelivery.classList.add("hide-slide");
     slideGuarantee.classList.add("hide-slide");
+    slideDeliveryBtn.classList.remove("active-btn");
+    slideGuaranteeBtn.classList.remove("active-btn");
+    slideCreditBtn.classList.add("active-btn");
   });
 }
