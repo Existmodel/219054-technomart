@@ -1303,10 +1303,10 @@ display: flex;
 .user-info a:first-child {
   display: inline-block;
   font-size: 21px;
-  line-height: 18px;
+  line-height: 21px;
   color:#000000;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 48px;
   position: relative;
 }
@@ -1350,7 +1350,7 @@ display: flex;
   background-position: -10px -1569px;
 }
 .user-account {
-  margin-top: 5px;
+  margin-top: 6px;
   position: relative;
 }
 .user-account a {
@@ -1949,6 +1949,7 @@ input[type="radio"]:disabled + label::before {
   padding-top: 67px;
   padding-bottom: 24px;
   text-transform: uppercase;
+  font-weight: normal;
 }
 .items-information p {
   margin:0;
