@@ -1,7 +1,5 @@
 var popupOpen = document.querySelector(".pop-up-open");
 var popup = document.querySelector(".pop-up");
-var storage = localStorage.getItem("login");
-
 
 if (popup) {
   var popupClose = popup.querySelector(".pop-up-close");
@@ -14,9 +12,7 @@ if (popup) {
     popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup-error");
-    } else {
-        localStorage.setItem("login", userName.value);
-        }
+    } 
   });
 }
 
@@ -25,13 +21,8 @@ if (popupOpen) {
     event.preventDefault();
     popupOverlay.classList.add("popup-overlay-show");
     popup.classList.add("popup-content-show");
-    if (storage) {
-      userName.value = storage;
-      userEmail.focus();
-    } else {
-        userName.focus();
-      }
-});
+    userName.focus();
+  });
 }
 
 if (popupClose) {
