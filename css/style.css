@@ -80,6 +80,8 @@ img {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
 }
 .company-info h2 {
   font-size: 30px;
@@ -178,11 +180,9 @@ img {
 .header-form-search:hover input {
   background-color: #212a3a;
 }
-.header-form-search:hover::before {
-  opacity: 1;
-}
 .header-form-search input:focus {
   background-color: #ffffff;
+  color: #000000;
 }
 .header-form-search label {
   position: absolute;
@@ -196,6 +196,9 @@ img {
   background-repeat: no-repeat;
   background-position: -10px -1323px;
   opacity: 0.3;
+}
+.header-form-search input:hover + label {
+  opacity: 1;
 }
 .header-form-search input:focus + label {
   background-position: -10px -1286px;
@@ -898,7 +901,7 @@ img {
   margin-right: 0;
 }
 .service {
-  background-color:  #f2f6f8; 
+  background-color: #f2f6f8; 
   padding-bottom: 102px;
 }
 .service-flex {
@@ -984,6 +987,7 @@ img {
   top:22px;
   right: 0;
   background-image: url(../img/service-delivery.png);
+  background-color: #f2f6f8; 
   width: 468px;
   height: 261px;
   margin: 0;
@@ -994,6 +998,7 @@ img {
   top:0px;
   right: 0;
   background-image: url(../img/service-garanty.png);
+  background-color: #f2f6f8; 
   width: 389px;
   height: 283px;
   margin: 0;
@@ -1004,6 +1009,7 @@ img {
   top:-2px;
   right:0;
   background-image: url(../img/service-credit.png);
+  background-color: #f2f6f8; 
   width: 465px;
   height: 285px;
   margin: 0;
@@ -1019,6 +1025,8 @@ img {
 .service-slide p {
   width: 275px;
   margin: 0;
+  position: relative;
+  z-index: 2;
 }
 .service-slide:nth-child(2) p {
   width: 375px;
